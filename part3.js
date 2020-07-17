@@ -1,10 +1,14 @@
 //number 1
 function myName() {
-    console.log('john')
+    let name = 'John Odia';
+    return name;
 }
-let favoriteFoods = ['pizza', 'ice cream']
+console.log(myName());
+
+
 
 //number 2
+let favoriteFoods = ['pizza', 'ice cream']
 function randomFoods() {
     let randomNum = Math.floor(Math.random() * 2)
     if (randomNum === 0) {
@@ -14,9 +18,15 @@ function randomFoods() {
         console.log(favoriteFoods[1]);
     }
 }
+randomFoods() 
+
+
+
+
+let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] //to be used for the following exercises
+
 
 //number 3
-let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 function displayOddNumbers() {
     for (let i = 0; i < numbers.length; i++) {
         if (numbers[i] % 2 != 0) {
@@ -24,6 +34,9 @@ function displayOddNumbers() {
         }
     }
 }
+displayOddNumbers()
+
+
 
 //number 4
 function displayEvenNumbers() {
@@ -33,20 +46,34 @@ function displayEvenNumbers() {
         }
     }
 }
-//number 5
-function  returnFirstOddNumber(){
+displayEvenNumbers()
 
-}
+
+//number 5
+const returnFirstOddNumber = array => {
+    for (let i = 0; i < numbers.length; i++) {
+        if (numbers[i] % 2 != 0){
+            console.log(numbers[i])
+            break;
+        }
+    }
+ }
+ returnFirstOddNumber();
+
+
 
 //number 6
-function returnFirstEvenNumber() {
+const returnFirstEvenNumber = () => {
     for (let i = 0; i < numbers.length; i++) {
-        if (numbers[i] % 2 === 0) {
-            console.log[i];
+        if (numbers[i] % 2 === 0){
+            console.log(numbers[i])
+            break;
         }
-        break;
     }
-}
+ }
+ returnFirstEvenNumber();
+
+
 
 //number 7
 function returnFirstHalf() {
@@ -54,6 +81,9 @@ function returnFirstHalf() {
     let arrayFirstHalf = numbers.slice(0, splitArray);
     console.log(arrayFirstHalf)
 }
+returnFirstHalf();
+
+
 
 //number 8
 function returnSecondHalf() {
@@ -61,4 +91,6 @@ function returnSecondHalf() {
     let arraySecondHalf = numbers.slice(splitArray,numbers.length);
     console.log(arraySecondHalf)
 }
+returnSecondHalf()
+
 
