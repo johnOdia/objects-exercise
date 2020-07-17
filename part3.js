@@ -1,14 +1,10 @@
 //number 1
 function myName() {
-    let name = 'John Odia';
-    return name;
+    console.log('john')
 }
-console.log(myName());
-
-
+let favoriteFoods = ['pizza', 'ice cream']
 
 //number 2
-let favoriteFoods = ['pizza', 'ice cream']
 function randomFoods() {
     let randomNum = Math.floor(Math.random() * 2)
     if (randomNum === 0) {
@@ -18,15 +14,9 @@ function randomFoods() {
         console.log(favoriteFoods[1]);
     }
 }
-randomFoods() 
-
-
-
-
-let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] //to be used for the following exercises
-
 
 //number 3
+let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 function displayOddNumbers() {
     for (let i = 0; i < numbers.length; i++) {
         if (numbers[i] % 2 != 0) {
@@ -34,9 +24,6 @@ function displayOddNumbers() {
         }
     }
 }
-displayOddNumbers()
-
-
 
 //number 4
 function displayEvenNumbers() {
@@ -46,34 +33,20 @@ function displayEvenNumbers() {
         }
     }
 }
-displayEvenNumbers()
-
-
 //number 5
-const returnFirstOddNumber = array => {
-    for (let i = 0; i < numbers.length; i++) {
-        if (numbers[i] % 2 != 0){
-            console.log(numbers[i])
-            break;
-        }
-    }
- }
- returnFirstOddNumber();
+function  returnFirstOddNumber(){
 
-
+}
 
 //number 6
-const returnFirstEvenNumber = () => {
+function returnFirstEvenNumber() {
     for (let i = 0; i < numbers.length; i++) {
-        if (numbers[i] % 2 === 0){
-            console.log(numbers[i])
-            break;
+        if (numbers[i] % 2 === 0) {
+            console.log[i];
         }
+        break;
     }
- }
- returnFirstEvenNumber();
-
-
+}
 
 //number 7
 function returnFirstHalf() {
@@ -81,9 +54,6 @@ function returnFirstHalf() {
     let arrayFirstHalf = numbers.slice(0, splitArray);
     console.log(arrayFirstHalf)
 }
-returnFirstHalf();
-
-
 
 //number 8
 function returnSecondHalf() {
@@ -91,5 +61,4 @@ function returnSecondHalf() {
     let arraySecondHalf = numbers.slice(splitArray,numbers.length);
     console.log(arraySecondHalf)
 }
-returnSecondHalf()
 

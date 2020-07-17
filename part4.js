@@ -16,25 +16,20 @@ function divide(a,b){
 }
 
 // part 4(B)
-function sayHello(username){
-  let name = username.toLowerCase()
-  if (name === 'john'){
-      console.log('Hello Boss')
-  }
-  else{
-      console.log(`Hello ${name}`)
-  }
+function sayHello(name){
+    if (name === 'John'){
+        console.log('Hello Boss')
+    }
+    else{
+        console.log(`Hello ${name}`)
+    }
 }
-sayHello('John')
 
 // part 4(C)
 function average(arr){
     let sum = arr.reduce((a, b) => a + b, 0)
     return sum / arr.length;
 }
-console.log(average([1,2,3,4]))
-
-
 
 //part 4(D)
 function createStudent(str1,str2){
@@ -43,8 +38,6 @@ function createStudent(str1,str2){
         secondName: str2
     }
 }
-createStudent('john','doe')
-
 
 //part 4(E)
 let john = createStudent('john','doe')
