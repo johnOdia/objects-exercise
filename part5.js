@@ -3,6 +3,9 @@ var displayFullName = (function (firstName = 'john', lastName = 'doe') {
     console.log(firstName + ' ' + lastName)
 })();
 
+
+
+
 //number 2
 const  createCalculator = {
     add : function(a,b){
